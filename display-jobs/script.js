@@ -1,6 +1,22 @@
 let target = document.getElementById('shaqo_doon_jobs');
 const url = 'https://api.shaqodoon.ro/jobs/';
-const city = 'Cluj-Napoca';
+const city = 'Brasov';
+const results = 2;
+const country = 'Rom%C3%A2nia';
+
+const createStringQuery = () => {
+    let query = '?';
+    if (city) {
+        query += `city=${city}&`;
+    }
+    if (results) {
+        query += `results=${results}&`;
+    }
+    if (country) {
+        query += `country=${country}&`;
+    }
+    return query;
+}
 
 const createAndInsertJob = (image, title, company, location, link) => {
     let shaqoJob = document.createElement('div');
@@ -72,15 +88,14 @@ const insertShaqoDoonLink = () => {
 }
 
 const getData = () => {
-    fetch('https://api.shaqodoon.ro/jobs/?country=Rom%C3%A2nia')
+    // fetch('https://api.shaqodoon.ro/jobs/?country=Rom%C3%A2nia&')
+    fetch(`${url}${createStringQuery()}`)
         .then(response => response.json())
         .then(data =>
         // console.log(data.jobs)
         {
-            data.jobs.forEach((job, index) => {
-                if (index < 2) {
-                    createAndInsertJob('', job.title, job.company, `${job.city}, ${job.country}`, job.link)
-                }
+            data.jobs.forEach((job) => {
+                createAndInsertJob('', job.title, job.company, `${job.city}, ${job.country}`, job.link)
             })
             insertShaqoDoonLink();
         }
@@ -94,7 +109,7 @@ const insertStyleInHead = () => {
     let link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://widgets.shaqodoon.ro/display-jobs/style.css';
+    link.href = 'https://widgets.shaqodoon.ro/display-jobs/style.css?v=0.07';
     link.media = 'all';
     theHead.appendChild(link)
 }

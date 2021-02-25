@@ -94,7 +94,7 @@ const insertStyleInHead = () => {
     let link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'style.css';
+    link.href = 'https://widgets.shaqodoon.ro/display-jobs/style.css';
     link.media = 'all';
     theHead.appendChild(link)
 }

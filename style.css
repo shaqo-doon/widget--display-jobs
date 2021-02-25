@@ -1,0 +1,78 @@
+#shaqo_doon_jobs{
+    width: 1170px;
+    margin: 0px auto;
+     /* color: #bdbdbd; */
+     color: #838383;
+}
+
+.shaqo_doon_job{
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    width: 1053px;
+    height: 111px;
+    padding: 40px 58.5px;
+    border-bottom: 1px solid #bdbdbd;
+    margin: 0px auto;
+   
+}
+
+.shaqo_doon_job_description{
+    padding-left: 20px;
+}
+
+.shaqo_doon_job_title{
+    margin: 0;
+}
+
+.shaqo_doon_location{
+    margin-top: 10px;
+}
+
+.shaqo_doon_location img{
+    width: 30px;
+    vertical-align:middle
+}
+
+.shaqo_doon_job_company{
+    margin-right: 10px;
+}
+
+img.shaqo_doon_img_location{
+    margin-top: 4px;
+}
+
+.shaqo_doon_location p{
+    display: inline;
+    line-height: 30px;
+}
+
+
+a.shaqo_doon_details{
+    color:white;
+    background-color: #b0cb1f;
+    margin-top: 36px;
+    border-radius: 3px;
+    height: 24px;
+    padding: 13px 0;
+    text-align: center;
+    text-decoration: none;
+    font: normal normal 400 20px/24px "Roboto", sans-serif;
+    transition: all ease 200ms;
+}
+
+a.shaqo_doon_details:hover{
+    background-color: #f98847;
+    transition: all ease 200ms;
+}
+
+.shaqo_doon_powered_by{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -150px;
+}
+
+.shaqo_doon_powered_by p{
+    display: inline;
+    margin-right: 5px;
+}

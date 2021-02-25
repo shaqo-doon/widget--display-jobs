@@ -28,7 +28,7 @@ const createAndInsertJob = (image, title, company, location, link) => {
 
     let shaqoImgCompany = document.createElement('img');
     shaqoLocation.appendChild(shaqoImgCompany);
-    shaqoImgCompany.src = './assets/company.png';
+    shaqoImgCompany.src = 'https://widgets.shaqodoon.ro/display-jobs/assets/company.png';
     shaqoImgCompany.alt = 'company icon';
 
     let shaqoJobCompany = document.createElement('p');
@@ -39,7 +39,7 @@ const createAndInsertJob = (image, title, company, location, link) => {
     let shaqoImgLocation = document.createElement('img');
     shaqoImgLocation.classList.add('shaqo_doon_img_location');
     shaqoLocation.appendChild(shaqoImgLocation);
-    shaqoImgLocation.src = './assets/location.jpg';
+    shaqoImgLocation.src = 'https://widgets.shaqodoon.ro/display-jobs/assets/location.jpg';
     shaqoImgLocation.alt = 'location icon';
 
     let shaqoJobLocation = document.createElement('p');

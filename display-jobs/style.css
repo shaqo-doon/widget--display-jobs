@@ -1,5 +1,6 @@
 #shaqo_doon_jobs{
-    width: 1170px;
+    width: 100%;
+    max-width: 1170px;
     margin: 0px auto;
      /* color: #bdbdbd; */
      color: #838383;
@@ -9,8 +10,9 @@
     /* background-color: red; */
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    width: 1053px;
+    width: 1000px;
     height: 111px;
+    margin: 0px auto;
     padding: 40px 58.5px;
     border-bottom: 1px solid #bdbdbd;
     margin: 0px auto;

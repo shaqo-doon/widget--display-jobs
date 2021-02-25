@@ -10,7 +10,7 @@
     /* background-color: red; */
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    width: 1000px;
+    width: 100%;
     height: 111px;
     margin: 0px auto;
     padding: 40px 58.5px;

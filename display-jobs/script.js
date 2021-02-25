@@ -1,7 +1,7 @@
 let target = document.getElementById('shaqo_doon_jobs');
 const url = 'https://api.shaqodoon.ro/jobs/';
 const city = 'Brasov';
-const results = 2;
+const results = 10;
 const country = 'Rom%C3%A2nia';
 
 const createStringQuery = () => {

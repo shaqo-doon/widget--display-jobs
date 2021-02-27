@@ -63,12 +63,16 @@ const createAndInsertJob = (image, title, company, location, link) => {
     shaqoLocation.appendChild(shaqoJobLocation);
     shaqoJobLocation.innerHTML = location;
 
-    let shaqoDetails = document.createElement('a');
-    shaqoDetails.classList.add('shaqo_doon_details');
+    let shaqoDetails = document.createElement('div');
     shaqoJob.appendChild(shaqoDetails);
-    shaqoDetails.innerHTML = 'DETALII';
-    shaqoDetails.target = '_blank';
-    shaqoDetails.href = link;
+    shaqoDetails.classList.add('shaqo_doon_details');
+
+    let shaqoDetailsLink = document.createElement('a');
+    shaqoDetailsLink.classList.add('shaqo_doon_details_link');
+    shaqoDetails.appendChild(shaqoDetailsLink);
+    shaqoDetailsLink.innerHTML = 'DETALII';
+    shaqoDetailsLink.target = '_blank';
+    shaqoDetailsLink.href = link;
 }
 
 const insertShaqoDoonLink = () => {
@@ -126,7 +130,7 @@ const insertStyleInHead = () => {
     let link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://widgets.shaqodoon.ro/display-jobs/style.css?v=0.11';
+    link.href = 'https://widgets.shaqodoon.ro/display-jobs/style.css?v=0.11.2';
     link.media = 'all';
     theHead.appendChild(link)
 }

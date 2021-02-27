@@ -51,12 +51,16 @@ img.shaqo_doon_img_location{
     line-height: 30px;
 }
 
+.shaqo_doon_details{
+    display: grid;
+    place-items: center;
+}
 
-a.shaqo_doon_details{
+a.shaqo_doon_details_link{
     color:white;
     background-color: #b0cb1f;
-    margin-top: 36px;
     border-radius: 3px;
+    width: 100%;
     height: 24px;
     padding: 8px 0;
     text-align: center;
@@ -65,7 +69,7 @@ a.shaqo_doon_details{
     transition: all ease 200ms;
 }
 
-a.shaqo_doon_details:hover{
+a.shaqo_doon_details_link:hover{
     background-color: #f98847;
     transition: all ease 200ms;
 }

@@ -99,7 +99,7 @@ const insertShaqoDoonLink = () => {
 
     const poworedByLink = document.createElement('a');
     poworedBy.appendChild(poworedByLink);
-    poworedByLink.innerHTML = 'shaqodoon.';
+    poworedByLink.innerHTML = 'shaqo doon.';
     poworedByLink.target = '_blank';
     poworedByLink.href = 'https://shaqodoon.ro/';
 }
@@ -126,7 +126,7 @@ const insertStyleInHead = () => {
     let link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://widgets.shaqodoon.ro/display-jobs/style.css?v=0.09';
+    link.href = 'https://widgets.shaqodoon.ro/display-jobs/style.css?v=0.10';
     link.media = 'all';
     theHead.appendChild(link)
 }

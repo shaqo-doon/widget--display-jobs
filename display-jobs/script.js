@@ -23,10 +23,10 @@ const createAndInsertJob = (image, title, company, location, link) => {
     shaqoJob.classList.add('shaqo_doon_job');
     target.appendChild(shaqoJob);
 
-    let shaqoImg = document.createElement('img');
-    shaqoImg.classList.add('shaqo_doon_img');
-    shaqoJob.appendChild(shaqoImg);
-    shaqoImg.src = '';
+    // let shaqoImg = document.createElement('img');
+    // shaqoImg.classList.add('shaqo_doon_img');
+    // shaqoJob.appendChild(shaqoImg);
+    // shaqoImg.src = '';
     // shaqoImg.alt = title;
 
     let shaqoDescription = document.createElement('div');
@@ -126,7 +126,7 @@ const insertStyleInHead = () => {
     let link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://widgets.shaqodoon.ro/display-jobs/style.css?v=0.08';
+    link.href = 'https://widgets.shaqodoon.ro/display-jobs/style.css?v=0.09';
     link.media = 'all';
     theHead.appendChild(link)
 }

@@ -76,15 +76,32 @@ const insertShaqoDoonLink = () => {
     poworedBy.classList.add('shaqo_doon_powered_by');
     target.appendChild(poworedBy);
 
+    const clickText = document.createElement('p');
+    poworedBy.appendChild(clickText);
+    clickText.innerHTML = 'apasa ';
+
+    const hereLink = document.createElement('a');
+    poworedBy.appendChild(hereLink);
+    hereLink.innerHTML = 'aici';
+    hereLink.target = '_blank';
+    hereLink.href = 'https://shaqodoon.ro/locuri-de-munca';
+
+    const forMoreText = document.createElement('p');
+    poworedBy.appendChild(forMoreText);
+    forMoreText.innerHTML = ' pentru mai multe locuri de munca.';
+
+    const breakLine = document.createElement('br');
+    poworedBy.appendChild(breakLine);
+
     const poworedByText = document.createElement('p');
     poworedBy.appendChild(poworedByText);
-    poworedByText.innerHTML = 'powered by';
+    poworedByText.innerHTML = 'powered by ';
 
     const poworedByLink = document.createElement('a');
     poworedBy.appendChild(poworedByLink);
     poworedByLink.innerHTML = 'shaqodoon.';
     poworedByLink.target = '_blank';
-    poworedByLink.href = 'https://shaqodoon.ro/locuri-de-munca';
+    poworedByLink.href = 'https://shaqodoon.ro/';
 }
 
 const getData = () => {
@@ -109,7 +126,7 @@ const insertStyleInHead = () => {
     let link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://widgets.shaqodoon.ro/display-jobs/style.css?v=0.07';
+    link.href = 'https://widgets.shaqodoon.ro/display-jobs/style.css?v=0.08';
     link.media = 'all';
     theHead.appendChild(link)
 }

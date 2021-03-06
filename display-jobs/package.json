@@ -4,7 +4,7 @@
   "description": "shaqo doon widget",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "sass": "node-sass -w styles.scss -o css/ --recursive"
     },
   "repository": {
     "type": "git",

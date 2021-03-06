@@ -1,2 +1,2 @@
 syndicated widget
-test test
+modificare

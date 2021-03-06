@@ -1,0 +1,22 @@
+{
+  "name": "widget",
+  "version": "1.0.0",
+  "description": "shaqo doon widget",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaqo-doon/widget--display-jobs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaqo-doon/widget--display-jobs/issues"
+  },
+  "homepage": "https://github.com/shaqo-doon/widget--display-jobs#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
